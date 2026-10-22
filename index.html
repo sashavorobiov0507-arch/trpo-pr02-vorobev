@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог — Практическая работа 2</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 1. ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <h1 class="header__title">Практическая работа 2</h1>
+      <span class="header__subject">ТРПО</span>
+    </div>
+  </header>
+
+  <!-- Контейнер: внутри две колонки (фильтры слева, каталог справа) -->
+  <div class="container layout">
+
+    <!-- 2. ПАНЕЛЬ ФИЛЬТРОВ -->
+    <aside class="layout__filters">
+      <form class="filter">
+        <h2 class="filter__title">Фильтры</h2>
+        <p class="filter__label">Категория</p>
+        <label class="filter__option"><input type="radio" name="category" checked> Все</label>
+        <label class="filter__option"><input type="radio" name="category"> Книги</label>
+        <label class="filter__option"><input type="radio" name="category"> Курсы</label>
+        <label class="filter__option"><input type="radio" name="category"> Инструменты</label>
+      </form>
+    </aside>
+
+    <main class="layout__content">
+
+      <!-- 3. ИНФОРМАЦИОННЫЙ БЛОК -->
+      <section class="info">
+        <h2 class="info__title">Учебный каталог</h2>
+        <p class="info__text">Всего товаров: 18</p>
+      </section>
+
+      <!-- 4. КАТАЛОГ: 18 карточек из data/catalog.csv -->
+      <section class="catalog">
+
+        <article class="card">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 1</h3>
+          <p class="card__price">Цена: 575</p>
+          <p class="card__rating">Рейтинг: 4.0</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 2</h3>
+          <p class="card__price">Цена: 660</p>
+          <p class="card__rating">Рейтинг: 4.2</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 3</h3>
+          <p class="card__price">Цена: 745</p>
+          <p class="card__rating">Рейтинг: 4.4</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 4</h3>
+          <p class="card__price">Цена: 830</p>
+          <p class="card__rating">Рейтинг: 4.6</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 5</h3>
+          <p class="card__price">Цена: 915</p>
+          <p class="card__rating">Рейтинг: 4.8</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 6</h3>
+          <p class="card__price">Цена: 1000</p>
+          <p class="card__rating">Рейтинг: 3.8</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 7</h3>
+          <p class="card__price">Цена: 1085</p>
+          <p class="card__rating">Рейтинг: 4.0</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 8</h3>
+          <p class="card__price">Цена: 1170</p>
+          <p class="card__rating">Рейтинг: 4.2</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 9</h3>
+          <p class="card__price">Цена: 1255</p>
+          <p class="card__rating">Рейтинг: 4.4</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 10</h3>
+          <p class="card__price">Цена: 1340</p>
+          <p class="card__rating">Рейтинг: 4.6</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 11</h3>
+          <p class="card__price">Цена: 1425</p>
+          <p class="card__rating">Рейтинг: 4.8</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 12</h3>
+          <p class="card__price">Цена: 1510</p>
+          <p class="card__rating">Рейтинг: 3.8</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 13</h3>
+          <p class="card__price">Цена: 1595</p>
+          <p class="card__rating">Рейтинг: 4.0</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 14</h3>
+          <p class="card__price">Цена: 1680</p>
+          <p class="card__rating">Рейтинг: 4.2</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 15</h3>
+          <p class="card__price">Цена: 1765</p>
+          <p class="card__rating">Рейтинг: 4.4</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 16</h3>
+          <p class="card__price">Цена: 1850</p>
+          <p class="card__rating">Рейтинг: 4.6</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 17</h3>
+          <p class="card__price">Цена: 1935</p>
+          <p class="card__rating">Рейтинг: 4.8</p>
+        </article>
+
+        <article class="card">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 18</h3>
+          <p class="card__price">Цена: 2020</p>
+          <p class="card__rating">Рейтинг: 3.8</p>
+        </article>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- 5. ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container">Данные: data/catalog.csv, тема: data/theme.json</div>
+  </footer>
+
+</body>
+</html>
