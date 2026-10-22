@@ -1,0 +1,15 @@
+@use '../variables' as *;
+@use '../tools' as *;
+
+.info {
+  @include panel;
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: space(0.5);
+  }
+
+  &__text {
+    color: $muted;
+  }
+}

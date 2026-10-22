@@ -1,0 +1,45 @@
+@use 'variables' as *;
+@use 'tools' as *;
+
+.container {
+  @include container;
+}
+
+.header {
+  background: $header-bg;
+  color: $surface;
+  padding: space(1.25) 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+
+  &__subject {
+    opacity: 0.8;
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: $space;
+  align-items: start;
+  margin-top: space(2);
+  margin-bottom: space(2);
+
+  @include tablet {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.footer {
+  padding: space(1.5) 0;
+  text-align: center;
+  color: $muted;
+}

@@ -1,0 +1,27 @@
+@use '../variables' as *;
+@use '../tools' as *;
+
+.filter {
+  @include panel;
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: $space;
+  }
+
+  &__label {
+    color: $muted;
+    margin-bottom: space(0.5);
+  }
+
+  &__option {
+    display: block;
+    margin-bottom: space(0.5);
+    cursor: pointer;
+
+    @include tablet {
+      display: inline-block;
+      margin-right: $space;
+    }
+  }
+}
