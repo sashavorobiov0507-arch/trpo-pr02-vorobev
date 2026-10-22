@@ -1,0 +1,162 @@
+/*  Общие настройки  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/*  Шапка  */
+.header {
+  background: #111827;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 22px;
+}
+
+.header__subject {
+  opacity: 0.8;
+}
+
+/*  Раскладка: фильтры слева, каталог справа  */
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/*  Белые панели (одинаковое оформление)  */
+.filter,
+.info,
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+/*  Фильтры  */
+.filter__title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.filter__label {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.filter__option {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/*  Информационный блок  */
+.info__title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.info__text {
+  color: #6b7280;
+}
+
+/*  Каталог и карточки  */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card__category {
+  align-self: flex-start;
+  background: #e9efff;
+  color: #315efb;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.card__title {
+  font-size: 18px;
+}
+
+.card__price {
+  font-weight: bold;
+}
+
+.card__rating {
+  color: #6b7280;
+}
+
+/*  Подвал  */
+.footer {
+  padding: 24px 0;
+  text-align: center;
+  color: #6b7280;
+}
+
+/*  Адаптивность  */
+/* Планшет: панель фильтров уходит над каталогом */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .filter__option {
+    display: inline-block;
+    margin-right: 16px;
+  }
+}
+
+/* Телефон: карточки в две колонки, плотнее */
+@media (max-width: 600px) {
+  .catalog {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+}
